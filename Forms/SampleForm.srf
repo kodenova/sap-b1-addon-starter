@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Form layout loaded with Application.SBO_Application.LoadBatchActions (see Menu.LoadFormFromResource).
+  TODO: rename the form uid/FormType (they must be unique), then add your own items.
+  Item types: 8 = static text, 16 = edit text, 4 = button, 113 = combo box, 127 = matrix, 128 = grid.
+  Item "1" and "2" are the standard OK and Cancel buttons.
+-->
+<Application>
+  <forms>
+    <action type="add">
+      <form appformnumber="SAS_FORM" FormType="SAS_FORM" type="0" BorderStyle="0" uid="SAS_FORM_1" title="Sample Form" visible="1" default_button="1" pane="0" color="0" left="300" top="100" width="400" height="200" client_width="390" client_height="170" AutoManaged="0" SupportedModes="15" ObjectType="">
+        <datasources>
+          <userdatasources>
+            <action type="add">
+              <datasource uid="UD_NAME" type="9" size="100" />
+            </action>
+          </userdatasources>
+        </datasources>
+        <items>
+          <action type="add">
+            <item uid="lblName" type="8" left="10" top="15" width="100" height="14" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="txtName" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific caption="Name" />
+            </item>
+            <item uid="txtName" type="16" left="115" top="15" width="200" height="14" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific TabOrder="1" IsPassword="0">
+                <databind databound="1" table="" alias="UD_NAME" />
+              </specific>
+            </item>
+            <item uid="1" type="4" left="10" top="140" width="65" height="20" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific caption="OK" />
+            </item>
+            <item uid="2" type="4" left="80" top="140" width="65" height="20" visible="1" enabled="1" from_pane="0" to_pane="0" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+              <AutoManagedAttribute />
+              <specific caption="Cancel" />
+            </item>
+          </action>
+        </items>
+        <items>
+          <action type="group" />
+        </items>
+        <ChooseFromListCollection>
+          <action type="add" />
+        </ChooseFromListCollection>
+        <DataBrowser />
+        <Settings Enabled="0" MatrixUID="" EnableRowFormat="0" />
+      </form>
+    </action>
+  </forms>
+</Application>

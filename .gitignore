@@ -1,0 +1,29 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.pdb
+
+# Packages
+packages/
+*.nupkg
+
+# Archives and installers
+*.rar
+*.zip
+*.ard
+*.msi
+
+# Secrets and local config
+*.pfx
+*.p12
+*.key
+appsettings.Local.config
